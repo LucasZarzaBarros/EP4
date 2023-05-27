@@ -1,0 +1,91 @@
+/*Colocamos o grid*/
+body {
+    display: grid;
+    grid-template-areas:
+        "cabe cabe cabe"
+        "pati corp corp"
+        "auau auau auau";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Usamos o nome cabeca para chamar o grid no header e colocamos  uma imagem de fundo*/
+.cabeca {
+    grid-area: cabe;
+    background-image: url(img/fundo7.jpg);
+    display: inline;
+
+}
+
+/*Usamos o nome patinha para chamar o grid no aside*/
+.patinha {
+    grid-area: pati;
+    
+}
+
+/*Usamos o nome corpo para chamar o grid no main*/
+.corpo {
+    grid-area: corp;
+
+}
+
+/*Usamos o nome auau para chamar o grid no footer e colocamos uma imagem de fundo*/
+.auau {
+    grid-area: auau;
+    background-image: url(img/fundo7.jpg);
+}
+
+/*Colocamos a logo no Header e no Footer e alteramos a largura e a altura junto com uma distancia de elementos */
+.logo {
+    width: 180px;
+    height: 180px;
+    margin: 5px;
+    padding-left: 10px;
+}
+
+/*Alteramos os dados finais que estao no footer colocando uma fonte de letra e colocamos o texto no centro*/
+.imagem {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Deixamos o H2 nocentro e alteramos a cor dele */
+h2 {
+    text-align: center;
+    color:rgb(13, 119, 218)
+    
+}
+
+/*Deixamos os parágrafos mais organizados*/
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+/*Centralizamos a fonte para ficar em baixo das imagens na medida certa usando o class="fonte"*/
+.fonte {
+    text-align: center;
+}
+
+/*Colocamos um Gif alteramos altura e largura e a distancia dele para outro elemento*/
+.gif{
+    width: 130px;
+    left: 130px;
+    margin-top: 5px;
+    padding-left: 988px;
+}
+/*Alteramos os dados finais que estao no footer colocando uma fonte de letra e colocamos o texto no centro*/
+#nome{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Coloquei uma borda e uma sombra no aside e no main */
+.borda{
+    border: 10px solid rgb(80, 166, 236);
+    border-radius: 20px;
+    box-shadow: 10px 10px rgba(236, 59, 213, 0.945);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
