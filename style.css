@@ -9,13 +9,14 @@ body {
     grid-template-rows: auto auto auto;
     grid-gap: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /*Usamos o nome cabeca para chamar o grid no header e colocamos  uma imagem de fundo*/
 .cabeca {
     grid-area: cabe;
     background-image: url(img/fundo7.jpg);
-    display: inline;
+   
 
 }
 
@@ -35,13 +36,15 @@ body {
 .auau {
     grid-area: auau;
     background-image: url(img/fundo7.jpg);
+    display: inline;
+    
 }
 
 /*Colocamos a logo no Header e no Footer e alteramos a largura e a altura junto com uma distancia de elementos */
 .logo {
     width: 180px;
     height: 180px;
-    margin: 5px;
+    margin: 2px;
     padding-left: 10px;
 }
 
@@ -72,10 +75,11 @@ p{
 
 /*Colocamos um Gif alteramos altura e largura e a distancia dele para outro elemento*/
 .gif{
-    width: 130px;
-    left: 130px;
+    width: 150px;
+    left: 150px;
     margin-top: 5px;
-    padding-left: 988px;
+    position: relative;
+    
 }
 /*Alteramos os dados finais que estao no footer colocando uma fonte de letra e colocamos o texto no centro*/
 #nome{
